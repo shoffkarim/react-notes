@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100px;
   pointer-events: none;
 }
 
@@ -15,11 +15,10 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,6 +27,33 @@
   color: #61dafb;
 }
 
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+}
+.notes-aside{
+  max-width: 300px;
+  width: 100%;
+  border-right: 1px solid gray;
+}
+.notes-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.notes-item{
+  padding-top: 10px;
+}
+.workspace{
+  width: 100%
+}
+.workspace-date{
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
